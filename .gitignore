@@ -1,0 +1,10 @@
+# Eclipse workspace
+.metadata/
+bin/
+*.class
+
+# macOS
+.DS_Store
+
+# Archivi esportati dei progetti
+*.zip
