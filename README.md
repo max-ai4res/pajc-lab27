@@ -7,8 +7,8 @@ Ogni cartella è un progetto Eclipse importabile direttamente nel workspace (Fil
 <!-- progetti: tabella scritta da scripts/lab (pajc-new-world), non modificarla a mano -->
 | Progetto | Contenuto |
 |----------|-----------|
-| `CalcCLI` | Calcolatrice a riga di comando con operatori binari |
+| `Hello` | Hello world! |
+| `CalcCLI` | Calcolatrice a riga di comando, dalla versione base all'uso delle lambda expression |
 | `FileUtil` | Utility per la gestione di file |
-| `Hello` |  |
-| `LezLambda` |  |
+| `LezLambda` | Primi passi con le classi anonime e lambda expression |
 <!-- /progetti -->
