@@ -30,17 +30,12 @@ public class CalcCLIApp {
 		
 		System.out.println(opSomma.getClass().getName());
 		
-		opMap.put("+", opSomma);
+		opMap.put("+", (x, y) -> x + y );		
+		opMap.put("-", (x, y) -> x - y );
+		opMap.put("*", (x, y) -> x * y );
+		opMap.put("/", (x, y) -> x / y );
+		opMap.put("^", (x, y) -> (int)Math.pow(x, y) );
 		
-		opMap.put("-", new BinaryOperator() 
-			{ public int eval(int a, int b) {
-				return a - b; }
-			}
-		);
-		
-		opMap.put("*", new Prodotto());
-		opMap.put("/", new Divisione());
-		opMap.put("^", new Potenza());
 		opMap.put("+*3", sommaScalata(3));
 		opMap.put("+*2", sommaScalata(2));
 		
