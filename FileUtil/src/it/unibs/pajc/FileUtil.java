@@ -4,10 +4,10 @@ import java.io.BufferedInputStream;
 import java.io.DataInputStream;
 import java.io.EOFException;
 import java.io.FileInputStream;
+import java.util.function.Consumer;
 
 public class FileUtil {
 	public static void dump(String fname) {
-		
 		int i = 0;
 		StringBuilder ascii = new StringBuilder();
 		try(

@@ -7,7 +7,7 @@ public class CalcCLIApp {
 	static BinaryOperator sommaScalata(int k) {
 		// k * (a+b)
 		BinaryOperator op = new BinaryOperator() {
-			public int eval(int a, int b) {
+			public double eval(double a, double b) {
 				return k*(a+b);
 			}
 		};
@@ -16,15 +16,15 @@ public class CalcCLIApp {
 	}
 	
 	public static void main(String[] args) {
-		int a = 12;
-		int b = 2;
+		double a = 12;
+		double b = 2;
 		int k = 3;
 		String chOp = "+*3"; // +, -, *, /
 		
 		HashMap<String, BinaryOperator> opMap = new HashMap<>();
 		
 		BinaryOperator opSomma = new BinaryOperator() {
-			public int eval(int a, int b) { return k*(a+b); }
+			public double eval(double a, double b) { return k*(a+b); }
 		};
 		
 		
@@ -34,7 +34,8 @@ public class CalcCLIApp {
 		opMap.put("-", (x, y) -> x - y );
 		opMap.put("*", (x, y) -> x * y );
 		opMap.put("/", (x, y) -> x / y );
-		opMap.put("^", (x, y) -> (int)Math.pow(x, y) );
+		
+		opMap.put("^", Math::pow);
 		
 		opMap.put("+*3", sommaScalata(3));
 		opMap.put("+*2", sommaScalata(2));
@@ -43,8 +44,8 @@ public class CalcCLIApp {
 		// ---
 		BinaryOperator op = opMap.get(chOp);
 		
-		int res = op.eval(a, b);
-		System.out.printf("%d %s %d = %d", a, chOp, b, res);
+		double res = op.eval(a, b);
+		System.out.printf("%f %s %f = %f", a, chOp, b, res);
 		
 
 	}
