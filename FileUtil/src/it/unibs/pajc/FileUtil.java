@@ -1,12 +1,34 @@
 package it.unibs.pajc;
 
-import java.io.BufferedInputStream;
-import java.io.DataInputStream;
-import java.io.EOFException;
-import java.io.FileInputStream;
+import java.io.*;
 import java.util.function.Consumer;
 
 public class FileUtil {
+	
+	public static void print(String fname) {
+		print(fname, (a, b) -> a);
+	}
+	
+	public static void print(String fname, RowFormatter f) {
+		try(
+			var in = new BufferedReader(new FileReader(fname)))
+		{
+			String row;
+			int n = 0;
+			while((row = in.readLine()) != null) {
+				System.out.println(f.format(row, ++n));
+			}			
+			
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		
+		
+	}
+	
 	public static void dump(String fname) {
 		int i = 0;
 		StringBuilder ascii = new StringBuilder();
