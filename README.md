@@ -9,8 +9,8 @@ Ogni cartella è un progetto Eclipse importabile direttamente nel workspace (Fil
 |----------|-----------|
 | `Hello` | Hello world! |
 | `CalcCLI` | Calcolatrice a riga di comando, dalla versione base all'uso delle lambda expression |
-| `FileUtil` | Utility per la gestione di file |
 | `LezLambda` | Primi passi con le classi anonime e lambda expression |
-| `LabAnsiColor` |  |
-| `LabLambda` |  |
+| `LabLambda` | Lambda di base, un cronometro per task generici |
+| `LabAnsiColor` | Le sequenza di escape ansi per gestire i colori della console, con un po' di lambda per gestire comandi |
+| `FileUtil` | Utility per la gestione di file |
 <!-- /progetti -->
