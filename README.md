@@ -13,4 +13,6 @@ Ogni cartella è un progetto Eclipse importabile direttamente nel workspace (Fil
 | `LabLambda` | Lambda di base, un cronometro per task generici |
 | `LabAnsiColor` | Le sequenza di escape ansi per gestire i colori della console, con un po' di lambda per gestire comandi |
 | `FileUtil` | Utility per la gestione di file |
+| `LezStream` | Esempi svolti a lezione, dall'approccio tradizionale agli stream e generatori |
+| `LezGUI_01` | Una primissa GUI con una JLabel ed un JButton (e chiaramente una JForm...) |
 <!-- /progetti -->
