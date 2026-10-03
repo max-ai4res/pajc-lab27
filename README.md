@@ -15,4 +15,7 @@ Ogni cartella è un progetto Eclipse importabile direttamente nel workspace (Fil
 | `FileUtil` | Utility per la gestione di file |
 | `LezStream` | Esempi svolti a lezione, dall'approccio tradizionale agli stream e generatori |
 | `LezGUI_01` | Una primissa GUI con una JLabel ed un JButton (e chiaramente una JForm...) |
+| `LabStream` |  |
+| `LabGUI01` |  |
+| `LabGUI02` |  |
 <!-- /progetti -->
