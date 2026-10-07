@@ -18,4 +18,5 @@ Ogni cartella è un progetto Eclipse importabile direttamente nel workspace (Fil
 | `LabStream` | Stream, esempi base |
 | `LabGUI01` | Primi passi nella GUI Java Swing |
 | `LabGUI02` | Aggiungiamo qualche componente grafico |
+| `LezThread01` | Esempi sui thread, dall'uso della classe Thread ai primi passi con gli ExecutorService |
 <!-- /progetti -->
