@@ -19,9 +19,10 @@ public class MyTask implements Runnable {
 			
 			try {
 				Thread.sleep(delay);
-			} catch(InterruptedException e) {
+			} 
+			catch(InterruptedException e) {
 				System.out.println("Task Interrotto!");
-				Thread.currentThread().interrupt();
+				//Thread.currentThread().interrupt();
 				return;
 			}		
 		}	
