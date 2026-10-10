@@ -17,6 +17,8 @@ Ogni cartella è un progetto Eclipse importabile direttamente nel workspace (Fil
 | `LezGUI_01` | Una primissa GUI con una JLabel ed un JButton (e chiaramente una JForm...) |
 | `LabStream` | Stream, esempi base |
 | `LabGUI01` | Primi passi nella GUI Java Swing |
-| `LabGUI02` | Aggiungiamo qualche componente grafico |
 | `LezThread01` | Esempi sui thread, dall'uso della classe Thread ai primi passi con gli ExecutorService |
+| `LabGUI02` | Aggiungiamo qualche componente grafico |
+| `LabGUI03` | Usiamo JSlider per definire un colore RGB |
+| `LabGUI04` | Una JList personalizzata per visualizzare i font di sistema |
 <!-- /progetti -->
