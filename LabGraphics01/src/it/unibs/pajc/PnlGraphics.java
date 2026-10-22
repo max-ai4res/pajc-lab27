@@ -19,6 +19,8 @@ public class PnlGraphics extends JPanel {
 		
 		g.setColor(Color.white);
 		g.drawLine(0,0 , w, h);
-		System.out.println("paintComponent: " + count++);
+		System.out.printf("paintComponent: %d [%s]\n",
+				count++,
+				Thread.currentThread().getName());
 	}
 }

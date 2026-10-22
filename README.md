@@ -26,4 +26,5 @@ Ogni cartella è un progetto Eclipse importabile direttamente nel workspace (Fil
 | `LabThreadPrimi` | Il numero di numeri primi in un intervallo, multithread |
 | `LabGUI05` | Creiamo un componente custom tastierino numerico |
 | `LabGraphics01` | Primi passi con le primitive grafiche |
+| `LezPrimeGUI` |  |
 <!-- /progetti -->
