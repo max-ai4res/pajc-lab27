@@ -29,4 +29,7 @@ Ogni cartella è un progetto Eclipse importabile direttamente nel workspace (Fil
 | `LezPrimeGUI` | Primi esempi di GUI e Thread |
 | `LabGraphics02` | La scacchiera |
 | `LabGraphicsMouse` | Interagire con il mouse, la cometa |
+| `LabGraphics03` | Scacchiera: coordinate mondo e coordinate schermo |
+| `LabTA01` | Trasformazione dei sistemi di riferimento |
+| `LabPalline` | Prima versione di un mondo di palline che rimbalzano |
 <!-- /progetti -->
