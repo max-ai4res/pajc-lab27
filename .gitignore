@@ -8,3 +8,6 @@ bin/
 
 # Archivi esportati dei progetti
 *.zip
+
+# Log di crash della JVM
+hs_err_pid*.log
