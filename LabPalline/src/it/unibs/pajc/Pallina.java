@@ -1,5 +1,7 @@
 package it.unibs.pajc;
 
+import java.awt.geom.Point2D;
+
 public class Pallina {
 	private final int id;
 	private Vec2 posizione;
@@ -18,27 +20,30 @@ public class Pallina {
 	public Vec2 velocita() { return velocita; }
 	public double raggio() { return raggio; }
 	
-	public void stepNext(int w, int h) {
-		posizione = new Vec2(posizione.x() + velocita.x(),
-				posizione.y() + velocita.y());
+	public void stepNext(double w, double h) {
+		double x = posizione.x(), y = posizione.y();
+		double vx = velocita.x(), vy = velocita.y();
 		
-		if(posizione.x() - raggio < 0) {
-			posizione = new Vec2(raggio, posizione.y());
-			velocita = new Vec2(Math.abs(velocita.x()), velocita.y());
+		x+=vx; y+=vy;
+		
+		if(x - raggio < 0) {
+			x =raggio; 
+			vx= Math.abs(vx); 
 		} else if(posizione.x() + raggio > w) {
-			posizione = new Vec2(w - raggio, posizione.y());
-			velocita = new Vec2(-Math.abs(velocita.x()), velocita.y());
+			x = w - raggio;
+			vx= -Math.abs(vx);
 		}
 		
-		if(posizione.y() - raggio < 0) {
-			posizione = new Vec2(posizione.x(), raggio);
-			velocita = new Vec2(velocita.x(), Math.abs(velocita.y()));
+		if(y - raggio < 0) {
+			y = raggio;
+			vy= Math.abs(vy);
 		} else if (posizione.y() + raggio > h) {
-			posizione = new Vec2(posizione.x(), h - raggio);
-			velocita = new Vec2(velocita.x(), -Math.abs(velocita.y()));
+			y =  h - raggio;
+			vy= -Math.abs(vy);
 		}
 		
-		
+		posizione = new Vec2(x, y);
+		velocita = new Vec2(vx, vy);
 		
 		
 	}

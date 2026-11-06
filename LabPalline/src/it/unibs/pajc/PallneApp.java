@@ -8,6 +8,7 @@ import javax.swing.JFrame;
 public class PallneApp {
 
 	private JFrame frame;
+	private Mondo mondo;
 
 	/**
 	 * Launch the application.
@@ -29,6 +30,7 @@ public class PallneApp {
 	 * Create the application.
 	 */
 	public PallneApp() {
+		this.mondo = new Mondo(500f,500f);
 		initialize();
 	}
 
@@ -40,7 +42,7 @@ public class PallneApp {
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		PnlPallineView pnl = new PnlPallineView();
+		PnlPallineView pnl = new PnlPallineView(mondo);
 		frame.getContentPane().add(pnl, BorderLayout.CENTER);
 	}
 
