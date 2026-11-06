@@ -34,4 +34,5 @@ Ogni cartella è un progetto Eclipse importabile direttamente nel workspace (Fil
 | `LabPalline` | Prima versione di un mondo di palline che rimbalzano |
 | `LabPalline-01` | Le palline rimbalzano come in LabPalline, ma con lo stato nella Pallina (campi privati mutabili) e Vec2 come valore immutabile verso l'esterno |
 | `LezNetowrk01` |  |
+| `LabWhatsApp-01` |  |
 <!-- /progetti -->
