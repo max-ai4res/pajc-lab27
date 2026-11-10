@@ -1,0 +1,43 @@
+{
+  // Task della parte C del corso PAJC. Lavorano nella cartella del file aperto
+  // (${fileDirname}): con il main.c di un esercizio davanti, "make" compila quell'esercizio.
+  // Ctrl+Shift+B (⌘⇧B su macOS) = make; gli altri da Terminal › Run Task.
+  "version": "2.0.0",
+  "options": { "cwd": "${fileDirname}" },
+  "presentation": { "clear": true, "reveal": "always" },
+  "problemMatcher": { "base": "$gcc", "fileLocation": ["autoDetect", "${fileDirname}"] },
+  "tasks": [
+    {
+      "label": "make",
+      "type": "shell",
+      "command": "make",
+      "group": { "kind": "build", "isDefault": true }
+    },
+    {
+      "label": "make bin/<questo file>",
+      "type": "shell",
+      "command": "make bin/${fileBasenameNoExtension}"
+    },
+    {
+      "label": "make run",
+      "type": "shell",
+      "command": "make run",
+      "group": "test"
+    },
+    {
+      "label": "make asan",
+      "type": "shell",
+      "command": "make asan && make run"
+    },
+    {
+      "label": "make asan (solo compila)",
+      "type": "shell",
+      "command": "make asan"
+    },
+    {
+      "label": "make clean",
+      "type": "shell",
+      "command": "make clean"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  // Debug con CodeLLDB: F5 compila il sorgente aperto (main.c -> bin/main, stack.c -> bin/stack)
+  // e lo lancia nel terminale integrato, dove il programma può anche leggere da tastiera.
+  // Gli argomenti della riga di comando si scrivono in "args" (es. ["4"] per bin/vla).
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug (lldb) bin/<questo file>",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${fileDirname}/bin/${fileBasenameNoExtension}",
+      "args": [],
+      "cwd": "${fileDirname}",
+      "terminal": "integrated",
+      "preLaunchTask": "make bin/<questo file>"
+    },
+    {
+      "name": "Debug (lldb) bin/main con AddressSanitizer",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${fileDirname}/bin/main",
+      "args": [],
+      "cwd": "${fileDirname}",
+      "terminal": "integrated",
+      "preLaunchTask": "make asan (solo compila)"
+    }
+  ]
+}

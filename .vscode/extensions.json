@@ -1,0 +1,10 @@
+{
+  // Estensioni per la parte C del corso: VS Code le propone all'apertura della cartella.
+  // C/C++ (IntelliSense e sottolineature), CodeLLDB (il debugger, uguale su macOS, Linux
+  // e WSL), WSL (solo su Windows). I progetti Java si aprono in Eclipse.
+  "recommendations": [
+    "ms-vscode.cpptools",
+    "vadimcn.vscode-lldb",
+    "ms-vscode-remote.remote-wsl"
+  ]
+}

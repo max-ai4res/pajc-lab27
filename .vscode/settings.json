@@ -1,0 +1,21 @@
+{
+  // Impostazioni della cartella per la parte C: valgono solo con pajc-lab27 aperto in VS Code.
+  // IntelliSense con lo stesso standard e gli stessi avvisi del Makefile.
+  "C_Cpp.default.cStandard": "c17",
+  "C_Cpp.default.compilerArgs": ["-Wall", "-Wextra"],
+  "C_Cpp.errorSquiggles": "enabled",
+  // Il bottone ▷ "Run C/C++ File" compila senza i flag del corso: si usano i task (make) e F5.
+  "C_Cpp.debugShortcut": false,
+  "[c]": { "editor.tabSize": 4, "editor.insertSpaces": true, "editor.formatOnSave": false },
+  // Le ricette di un Makefile vogliono il TAB: con gli spazi make dice "missing separator".
+  "[makefile]": { "editor.insertSpaces": false, "editor.renderWhitespace": "all" },
+  "files.eol": "\n",
+  // Fuori dalla vista: gli eseguibili e i file di lavoro di Eclipse (i progetti Java si aprono lì).
+  "files.exclude": {
+    "**/bin": true,
+    "**/.metadata": true,
+    "**/.settings": true,
+    "**/.project": true,
+    "**/.classpath": true
+  }
+}
