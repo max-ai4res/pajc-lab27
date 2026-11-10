@@ -20,12 +20,19 @@ public class Pallina {
 	public Vec2 velocita() { return velocita; }
 	public double raggio() { return raggio; }
 	
-	public void stepNext(double w, double h) {
+	public void invertiVelocita() {
+		velocita = new Vec2(-velocita.x(), -velocita.y());
+	}
+	
+	public void stepNext(double a, double dt, double w, double h) {
 		double x = posizione.x(), y = posizione.y();
 		double vx = velocita.x(), vy = velocita.y();
 		
-		x+=vx; y+=vy;
+		vx=vx; vy+=a*dt;
+		x+=vx*dt; y+=vy*dt;
 		
+		
+		// limiti del mondo
 		if(x - raggio < 0) {
 			x =raggio; 
 			vx= Math.abs(vx); 

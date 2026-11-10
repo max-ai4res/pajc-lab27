@@ -2,7 +2,7 @@
 
 Materiale del laboratorio del corso di Programmazione Avanzata Java e C (PAJC), Università degli Studi di Brescia.
 
-Ogni cartella è un progetto Eclipse importabile direttamente nel workspace (File > Import > Existing Projects into Workspace).
+Ogni cartella Java è un progetto Eclipse importabile direttamente nel workspace (File > Import > Existing Projects into Workspace). Le cartelle della parte C (`LC-…`, `BC-…`) sono sorgenti con un `Makefile`: si aprono con Visual Studio Code o da terminale (`make`; C17 con gcc o clang). Per VS Code la configurazione è già nel repository (`.vscode/`): la guida per macOS, Linux e Windows è [VSCODE.md](VSCODE.md) e `./setup-vscode.sh` controlla e installa i prerequisiti.
 
 <!-- progetti: tabella scritta da scripts/lab (pajc-new-world), non modificarla a mano -->
 | Progetto | Contenuto |

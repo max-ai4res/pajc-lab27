@@ -5,6 +5,7 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import java.awt.geom.Ellipse2D;
+import java.awt.geom.Rectangle2D;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -15,6 +16,7 @@ import javax.swing.Timer;
 public class PnlPallineView extends JPanel {
 	private final Mondo mondo;
 	private final Timer timer = new Timer(15, e -> stepNext());
+
 
 	public void stepNext() {
 		mondo.stepNext();
@@ -35,7 +37,17 @@ public class PnlPallineView extends JPanel {
 		g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 		int w = getWidth();
 		int h = getHeight();
-				
+		
+		double sx = w/mondo.larghezza();
+		double sy = h/mondo.altezza();
+		double s = Math.min(sx, sy);
+		
+		
+		g2.scale(s, s);
+		
+		g2.setColor(Color.lightGray);
+		g2.fill(new Rectangle2D.Double(0,0,mondo.larghezza(), mondo.altezza()));
+		
 		for(Pallina p: mondo.listPalline())
 			paintPallina(g2, p);
 		
