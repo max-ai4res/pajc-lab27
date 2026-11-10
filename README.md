@@ -33,6 +33,6 @@ Ogni cartella Java è un progetto Eclipse importabile direttamente nel workspace
 | `LabTA01` | Trasformazione dei sistemi di riferimento |
 | `LabPalline` | Prima versione di un mondo di palline che rimbalzano |
 | `LabPalline-01` | Le palline rimbalzano come in LabPalline, ma con lo stato nella Pallina (campi privati mutabili) e Vec2 come valore immutabile verso l'esterno |
-| `LezNetowrk01` |  |
-| `LabWhatsApp-01` |  |
+| `LezNetowrk01` | Primo modello Client/Server via Socket |
+| `LabWhatsApp-01` | Nucleo base da cui partire per creare la vostra versione di WhatsApp. |
 <!-- /progetti -->
