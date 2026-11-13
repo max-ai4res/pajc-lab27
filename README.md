@@ -2,7 +2,7 @@
 
 Materiale del laboratorio del corso di Programmazione Avanzata Java e C (PAJC), Università degli Studi di Brescia.
 
-Ogni cartella Java è un progetto Eclipse importabile direttamente nel workspace (File > Import > Existing Projects into Workspace). Le cartelle della parte C (`LC-…`, `BC-…`) sono sorgenti con un `Makefile`: si aprono con Visual Studio Code o da terminale (`make`; C17 con gcc o clang). Per VS Code la configurazione è già nel repository (`.vscode/`): la guida per macOS, Linux e Windows è [VSCODE.md](VSCODE.md) e `./setup-vscode.sh` controlla e installa i prerequisiti.
+Ogni cartella Java è un progetto Eclipse importabile direttamente nel workspace (File > Import > Existing Projects into Workspace). Le cartelle della parte C (`LC-…`, `BC-…`) sono sorgenti con un `Makefile`: si aprono con Visual Studio Code o da terminale (`make`; C17 con gcc o clang). Per VS Code la configurazione è già nel repository (`.vscode/`): la guida per macOS, Linux e Windows è [VSCODE.md](VSCODE.md) e `./setup-vscode.sh` controlla e installa i prerequisiti. In `risorse/` c'è il materiale da copiare per un esercizio nuovo (il `Makefile` modello con un `main.c`, il modello di programma a più file).
 
 <!-- progetti: tabella scritta da scripts/lab (pajc-new-world), non modificarla a mano -->
 | Progetto | Contenuto |
@@ -35,4 +35,6 @@ Ogni cartella Java è un progetto Eclipse importabile direttamente nel workspace
 | `LabPalline-01` | Le palline rimbalzano come in LabPalline, ma con lo stato nella Pallina (campi privati mutabili) e Vec2 come valore immutabile verso l'esterno |
 | `LezNetowrk01` | Primo modello Client/Server via Socket |
 | `LabWhatsApp-01` | Nucleo base da cui partire per creare la vostra versione di WhatsApp. |
+| `LabWhatsApp-02` | Evoluzione di `LabWhatsApp-01` |
+| `LabMandelbrot` |  |
 <!-- /progetti -->
