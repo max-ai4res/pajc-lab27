@@ -89,9 +89,32 @@ public class PnlViewport extends JPanel implements
 	}
 	
 
+	private Point panStartMousePosition = null;
+	private Rectangle2D.Double panStartViewport = null;
 	@Override
 	public void mouseDragged(MouseEvent e) {
-		// TODO Auto-generated method stub
+		
+		mousePosition = e.getPoint();
+		
+		if(panStartMousePosition == null) {
+			panStartMousePosition = e.getPoint();
+			panStartViewport = viewport;
+			return;
+		}
+		
+		int dxScreen = e.getX() - panStartMousePosition.x;
+		int dyScreen = e.getY() - panStartMousePosition.y;
+		
+		double dx = dxScreen * panStartViewport.getWidth() / getWidth();
+		double dy = dyScreen * panStartViewport.getHeight() / getHeight();
+		
+		Rectangle2D.Double newViewport = new Rectangle2D.Double(
+				panStartViewport.x - dx,
+				panStartViewport.y - dy,
+				panStartViewport.getWidth(),
+				panStartViewport.getHeight());
+		
+		setViewport(newViewport);
 		
 	}
 
@@ -123,7 +146,7 @@ public class PnlViewport extends JPanel implements
 
 	@Override
 	public void mouseReleased(MouseEvent e) {
-		// TODO Auto-generated method stub
+		panStartMousePosition = null;
 		
 	}
 
