@@ -28,7 +28,13 @@ public class MandelbrotApp {
 	/**
 	 * Create the application.
 	 */
+	
+	private MandelbrotCntrl cntrl;
+	private MandelbrotModel model;
 	public MandelbrotApp() {
+		model = new MandelbrotModel();
+		cntrl = new MandelbrotCntrl(model);
+		
 		initialize();
 	}
 
@@ -40,7 +46,7 @@ public class MandelbrotApp {
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		PnlViewport pnl = new PnlViewport();
+		PnlMandelbrot pnl = new PnlMandelbrot(cntrl);
 		frame.getContentPane().add(pnl, BorderLayout.CENTER);
 	}
 
