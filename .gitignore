@@ -11,3 +11,8 @@ bin/
 
 # Log di crash della JVM
 hs_err_pid*.log
+
+# Oggetti e simboli di debug del C
+*.o
+*.dSYM/
+*.d
