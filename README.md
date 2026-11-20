@@ -40,4 +40,5 @@ Ogni cartella Java è un progetto Eclipse importabile direttamente nel workspace
 | `LabMandelbrot-Eventi` | Evoluzione di LabMandelbrot con gestione degli aggiornamenti del model tramite eventi |
 | `LabMandelbrot-MT` | Evoluzione di LabMandelbrot-Eventi con supporto multithread nella creazione dell'insieme |
 | `c-lez-misc` |  |
+| `clab-calc` | Un esempio similie alla calcolatrice CLI Java ma con puntatori a funzioni C ed una gestione multifile del progetto |
 <!-- /progetti -->
