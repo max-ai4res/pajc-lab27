@@ -35,7 +35,9 @@ Ogni cartella Java è un progetto Eclipse importabile direttamente nel workspace
 | `LabPalline-01` | Le palline rimbalzano come in LabPalline, ma con lo stato nella Pallina (campi privati mutabili) e Vec2 come valore immutabile verso l'esterno |
 | `LezNetowrk01` | Primo modello Client/Server via Socket |
 | `LabWhatsApp-01` | Nucleo base da cui partire per creare la vostra versione di WhatsApp. |
-| `LabWhatsApp-02` | Evoluzione di `LabWhatsApp-01` |
+| `LabWhatsApp-02` | Evoluzione di `LabWhatsApp-01` funzionamneto con protocollo a comandi |
 | `LabMandelbrot` | Mandelbrot single-thread |
 | `LabMandelbrot-Eventi` | Evoluzione di LabMandelbrot con gestione degli aggiornamenti del model tramite eventi |
+| `LabMandelbrot-MT` | Evoluzione di LabMandelbrot-Eventi con supporto multithread nella creazione dell'insieme |
+| `c-lez-misc` |  |
 <!-- /progetti -->
